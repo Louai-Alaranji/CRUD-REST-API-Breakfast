@@ -1,0 +1,23 @@
+we start with:
+
+1- start class library 
+dotnet new classlib -o BuberBreakfast.Contracts
+
+
+2- the actual project: 
+dotnet new webapi -o BuberBreakfast
+
+3- build with dotnet build, we get a warning that there are no projects in which case we run:
+dotnet sln add *Buber[TAB].contracts  *Buber [TAB]
+
+4- open the code edition with 
+code .
+____________________________________________________________________________________________________
+when in the actual project, we start with BB.Contracts and we create a folder 
+called breakfast where we have files for different purposes. 
+
+2- we go over to BuberBreakfast foler and in the Controllers folder we start with BreakfastController.cs. 
+
+3- in the terimal write: 
+dotnet add .\buberBreakfast\ reference .\BuberBreakfast.Contracts\
+
